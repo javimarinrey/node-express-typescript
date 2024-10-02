@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { getConnection } from './db';
 
+
 const router = Router();
 
 // Obtener todos los elementos
