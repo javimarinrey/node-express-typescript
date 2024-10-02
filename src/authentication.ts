@@ -1,7 +1,6 @@
-import express from "express";
 import jwt from "jsonwebtoken";
 
-function loggerMiddleware(req:any, res: any, next: any) {
+function authentication(req:any, res: any, next: any) {
     console.log(`${req.method} ${req.path}`);
 
     if (req.method === "OPTIONS") {
@@ -36,4 +35,4 @@ function loggerMiddleware(req:any, res: any, next: any) {
     }
 }
 
-export default loggerMiddleware;
+export default authentication;
